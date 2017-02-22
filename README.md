@@ -1,8 +1,10 @@
+{::nomarkdown}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Module: tm-serialize</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +19,128 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
-
-    
-
-
-
-    
-
-
-    <h3> </h3>
+    <h1 class="page-title">Module: tm-serialize</h1>
 
 
 
 
 
 
+<section>
 
-
-
-
-    
+<header>
 
 
 
 
 
+</header>
+
+<article>
+    <div class="container-overview">
+
+
+            <div class="description"><p>Serialize.</p>
+<pre class="prettyprint source"><code>import serialize from 'tm-serialize'
+const query = serialize({'test1':'content1', 'test2':'content2'}) // test1=content1&test2=content2</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Serialize.js.html">Serialize.js</a>, <a href="Serialize.js.html#line13">line 13</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+</section>
 
 
 
@@ -63,3 +161,5 @@
 <script src="scripts/linenumber.js"> </script>
 </body>
 </html>
+
+{:/}

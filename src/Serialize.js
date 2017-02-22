@@ -3,9 +3,9 @@
  *
  * ~~~~
  * import serialize from 'tm-serialize'
- * const query = serialize({'dsdsd':'dsdsdsdsd'})
+ * const query = serialize({'test1':'content1', 'test2':'content2'}) // test1=content1&test2=content2
  * ~~~~
- * @constructor Memberships
+ * @module tm-serialize
  */
 export default function (obj) {
   return Object.keys(obj).map(function(key) {
