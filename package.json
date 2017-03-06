@@ -1,10 +1,10 @@
 {
-  "name": "tm-serialize",
+  "name": "plasma-serialize",
   "version": "1.0.2",
   "main": "dist/index.js",
   "scripts": {
     "predoc": "npm run build",
-    "doc": "rimraf doc && jsdoc --configure etc/jsdoc.json dist",
+    "doc": "rimraf doc && jsdoc --configure etc/jsdoc.json dist && jsdoc2md --configure etc/jsdoc2md.json src/Serialize.js > ./README.md",
     "build": "rimraf dist && babel -d dist src",
     "release": "npm version patch && git push && git push --tags && npm publish",
     "test": "./node_modules/.bin/mocha --compilers js:babel-register --require babel-polyfill",
@@ -16,12 +16,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:stevenReed/tm-serialize"
+    "url": "git@github.com:Plasma-Platform/Plasma-Serialize.git"
   },
   "bugs": {
-    "url": "https://github.com/stevenReed/tm-serialize/issues"
+    "url": "https://github.com/Plasma-Platform/Plasma-Serialize/issues"
   },
-  "homepage": "https://github.com/stevenReed/tm-serialize",
+  "homepage": "https://github.com/Plasma-Platform/Plasma-Serialize",
   "description": "Serialize",
   "babel": {
     "presets": [
@@ -32,13 +32,16 @@
   "devDependencies": {
     "assert": "^1.4.1",
     "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
     "babel-polyfill": "^6.22.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-stage-0": "^6.22.0",
     "chai": "^3.5.0",
     "istanbul": "^1.0.0-alpha",
     "jsdoc": "^3.4.3",
+    "jsdoc-babel": "^0.3.0",
     "jsdoc-strip-async-await": "^0.1.0",
+    "jsdoc-to-markdown": "^3.0.0",
     "mocha": "^3.2.0",
     "rimraf": "^2.5.4"
   }
